@@ -1,19 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://lijunjieone.github.io/myblog/blog/2013/05/21/first-blog/</loc>
+        <loc>http://lijunjieone.github.io/blog/2013/05/21/first-blog/</loc>
         <lastmod>2013-05-21T22:39:19+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lijunjieone.github.io/myblog/blog/archives/</loc>
-        <lastmod>2013-05-21T22:39:19+08:00</lastmod>
+        <loc>http://lijunjieone.github.io/blog/2013/05/21/install-theme/</loc>
+        <lastmod>2013-05-22T13:48:30+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lijunjieone.github.io/myblog/</loc>
-        <lastmod>2013-05-21T22:39:19+08:00</lastmod>
+        <loc>http://lijunjieone.github.io/blog/2013/05/22/octopress-install/</loc>
+        <lastmod>2013-05-22T13:18:21+08:00</lastmod>
     </url>
     <url>
-        <loc>http://lijunjieone.github.io/myblog/robots.txt</loc>
+        <loc>http://lijunjieone.github.io/blog/archives/</loc>
+        <lastmod>2013-05-22T13:48:30+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lijunjieone.github.io/</loc>
+        <lastmod>2013-05-22T13:48:30+08:00</lastmod>
+    </url>
+    <url>
+        <loc>http://lijunjieone.github.io/robots.txt</loc>
         <lastmod>2013-05-21T21:55:55+08:00</lastmod>
     </url>
 </urlset>

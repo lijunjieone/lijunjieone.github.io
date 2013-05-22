@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://lijunjieone.github.io/myblog/sitemap.xml 
+Sitemap: http://lijunjieone.github.io/sitemap.xml 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://lijunjieone.github.io/myblog/atom.xml" rel="self"/>
-  <link href="http://lijunjieone.github.io/myblog/"/>
-  <updated>2013-05-21T22:40:36+08:00</updated>
-  <id>http://lijunjieone.github.io/myblog/</id>
+  <link href="http://lijunjieone.github.io/atom.xml" rel="self"/>
+  <link href="http://lijunjieone.github.io/"/>
+  <updated>2013-05-22T13:57:45+08:00</updated>
+  <id>http://lijunjieone.github.io/</id>
   <author>
     <name><![CDATA[Lijunjie]]></name>
     
@@ -14,10 +14,65 @@
 
   
   <entry>
+    <title type="html"><![CDATA[完善博客写作]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/05/22/octopress-install/"/>
+    <updated>2013-05-22T13:15:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/05/22/octopress-install</id>
+    <content type="html"><![CDATA[<h1>使用Octopress来写博客的整个过程</h1>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[octopress博客系统使用]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/05/21/install-theme/"/>
+    <updated>2013-05-21T22:41:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/05/21/install-theme</id>
+    <content type="html"><![CDATA[<h1>修复github上显示不正常的问题</h1>
+
+<ul>
+<li>问题
+
+<ul>
+<li>使用octopress可以很简单的把他推送到github上，只需要安装好octopress</li>
+<li>使用octopress new_post[&lsquo;test&rsquo;]建立一个最简单的文章</li>
+<li>使用rake setup_github_pages来设置你的github地址
+
+<ul>
+<li>设置的这个地址很有学问，这儿地方很容易出错</li>
+<li>github中的pages有两种，如果使用的工程的地址，那么可能出现页面展示很难看的问题
+
+<ul>
+<li>github的pages第一种是相对于这个用户的，只能建立一个这样的仓库，仓库名称应该是yourname.github.io这个名字，建立一个，你推送上去的文件，访问yourname.github.io将会展现出来。octopress部署到这个地址上，那么显示正常</li>
+<li>github的pages的另外一种类型是针对每个仓库都有一个pd-pages分支，你推送的这个分支上的内容，他可以使用yourname.github.io/yourrepo来访问，如果octopress推送到这个地址，那么就显示不正常</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<h1>安装新的octopress博客主题</h1>
+
+<ul>
+<li>从google上搜索octopress主题，可以找到很多</li>
+<li>进入.themes目录下</li>
+<li>使用git clone GIT_URL cyan到本地</li>
+<li>退出到octopress根目录下，使用rake install[&lsquo;cyan&rsquo;]来安装新主题</li>
+<li>rake preview 查看是否主题生效</li>
+</ul>
+
+
+<h1>安装评论</h1>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[first_blog]]></title>
-    <link href="http://lijunjieone.github.io/myblog/blog/2013/05/21/first-blog/"/>
+    <link href="http://lijunjieone.github.io/blog/2013/05/21/first-blog/"/>
     <updated>2013-05-21T21:57:00+08:00</updated>
-    <id>http://lijunjieone.github.io/myblog/blog/2013/05/21/first-blog</id>
+    <id>http://lijunjieone.github.io/blog/2013/05/21/first-blog</id>
     <content type="html"><![CDATA[<h1>使用octopress来写博客</h1>
 
 <ul>
