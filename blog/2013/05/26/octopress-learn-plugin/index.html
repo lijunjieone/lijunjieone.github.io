@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>octopress博客系统使用 - Record Life</title>
+  <title>octopress 插件学习 - Record Life</title>
   <meta name="author" content="Lijunjie">
 
   
-  <meta name="description" content="修复github上显示不正常的问题 问题 使用octopress可以很简单的把他推送到github上，只需要安装好octopress
-使用octopress new_post[&lsquo;test&rsquo;]建立一个最简单的文章
-使用rake &hellip;">
+  <meta name="description" content="前面都是摘要 摘要 写一段摘要文字，现在是在博客的列表上，然后以 1
+&lt;!--more--&gt; 分割，那么以前的文字会作为摘要。 图片插件 语法 1 使用 这段文字是为了显示图片的展现位置 这段文字是为了显示图片的左边 这段文字是为了显示图片的右边 这段文字是为了显示图片的展现位置 引用 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lijunjieone.github.io/blog/2013/05/21/install-theme/">
+  <link rel="canonical" href="http://lijunjieone.github.io/blog/2013/05/26/octopress-learn-plugin/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopress博客系统使用</h1>
+      <h1 class="entry-title">Octopress 插件学习</h1>
     
     
       <p class="meta">
@@ -85,7 +84,7 @@
   
 
 
-<time datetime="2013-05-21T22:41:00+08:00" pubdate data-updated="true">May 21<span>st</span>, 2013</time>
+<time datetime="2013-05-26T23:05:00+08:00" pubdate data-updated="true">May 26<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -94,48 +93,70 @@
   </header>
 
 
-<div class="entry-content"><h1>修复github上显示不正常的问题</h1>
+<div class="entry-content"><p>前面都是摘要</p>
 
-<ul>
-<li>问题
-
-<ul>
-<li>使用octopress可以很简单的把他推送到github上，只需要安装好octopress</li>
-<li>使用octopress new_post[&lsquo;test&rsquo;]建立一个最简单的文章</li>
-<li>使用rake setup_github_pages来设置你的github地址
-
-<ul>
-<li>设置的这个地址很有学问，这儿地方很容易出错</li>
-<li>github中的pages有两种，如果使用的工程的地址，那么可能出现页面展示很难看的问题
-
-<ul>
-<li>github的pages第一种是相对于这个用户的，只能建立一个这样的仓库，仓库名称应该是yourname.github.io这个名字，建立一个，你推送上去的文件，访问yourname.github.io将会展现出来。octopress部署到这个地址上，那么显示正常</li>
-<li>github的pages的另外一种类型是针对每个仓库都有一个pd-pages分支，你推送的这个分支上的内容，他可以使用yourname.github.io/yourrepo来访问，如果octopress推送到这个地址，那么就显示不正常</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
+<!--more-->
 
 
-<h1>安装新的octopress博客主题</h1>
+<h1>摘要</h1>
 
-<ul>
-<li>从google上搜索octopress主题，可以找到很多</li>
-<li>进入.themes目录下</li>
-<li>使用git clone GIT_URL cyan到本地</li>
-<li>退出到octopress根目录下，使用rake install[&lsquo;cyan&rsquo;]来安装新主题</li>
-<li>rake preview 查看是否主题生效</li>
-</ul>
+<p>写一段摘要文字，现在是在博客的列表上，然后以</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!--more--&gt;</span></code></pre></td></tr></table></div></figure>
 
 
-<h1>安装评论</h1>
+<p>分割，那么以前的文字会作为摘要。</p>
 
-<p>octopress本身支持disqus
-&ndash; 首先注册一个账户在disqus上，然后拿到他的shortname
-&ndash; 在_config.xml文件中找到disqus选项，开启支持，然后填入你的shortname就可以了</p>
+<h1>图片插件</h1>
+
+<h2>语法</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'><img class="[class names]" src="/path/to/image" title="[width] [height] [title text [alt text]]" ></span></code></pre></td></tr></table></div></figure>
+
+
+<h2>使用</h2>
+
+<p><img src="http://placekitten.com/890/280">
+这段文字是为了显示图片的展现位置</p>
+
+<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" >
+这段文字是为了显示图片的左边</p>
+
+<p><img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #3" >
+这段文字是为了显示图片的右边</p>
+
+<p><img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten">
+这段文字是为了显示图片的展现位置</p>
+
+<h1>引用</h1>
+
+<h2>语法</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'><blockquote><p></span><span class='line'>Quote string<br/></span><span class='line'></p><footer><strong>[author[</strong> <cite>Source]] [Link] [Source_link_title]</cite></footer></blockquote></span></code></pre></td></tr></table></div></figure>
+
+
+<h2>例子</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'><blockquote><p></span><span class='line'>Last night I lay in bed looking up at the stars in the sky and I thought to myself, where the heck is the ceiling.<br/></span><span class='line'></p></blockquote></span></code></pre></td></tr></table></div></figure>
+
+
+<blockquote><p>Last night I lay in bed looking up at the stars in the sky and I thought to myself, where the heck is the ceiling.</p></blockquote>
+
+
+
+
+<blockquote><p>Flying is learning how to throw yourself at the ground and miss.</p><footer><strong>Douglas Adams</strong> <cite>The Hichhikers Guide to the Galaxy</cite></footer></blockquote>
+
+
+
 </div>
 
 
@@ -158,7 +179,7 @@
   
 
 
-<time datetime="2013-05-21T22:41:00+08:00" pubdate data-updated="true">May 21<span>st</span>, 2013</time>
+<time datetime="2013-05-26T23:05:00+08:00" pubdate data-updated="true">May 26<span>th</span>, 2013</time>
       
 
 
@@ -166,7 +187,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lijunjieone.github.io/blog/2013/05/21/install-theme/" data-via="" data-counturl="http://lijunjieone.github.io/blog/2013/05/21/install-theme/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lijunjieone.github.io/blog/2013/05/26/octopress-learn-plugin/" data-via="" data-counturl="http://lijunjieone.github.io/blog/2013/05/26/octopress-learn-plugin/" >Tweet</a>
   
   
   
@@ -175,10 +196,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/05/21/first-blog/" title="Previous Post: first_blog">&laquo; first_blog</a>
+        <a class="basic-alignment left" href="/blog/2013/05/26/octopress-share-code/" title="Previous Post: octopress分享代码笔记">&laquo; octopress分享代码笔记</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/05/22/octopress-install/" title="Next Post: 完善博客写作">完善博客写作 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/06/03/house-feature/" title="Next Post: 东吴相对论之房子的分化">东吴相对论之房子的分化 &raquo;</a>
       
     </p>
   </footer>
@@ -244,8 +265,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://lijunjieone.github.io/blog/2013/05/21/install-theme/';
-        var disqus_url = 'http://lijunjieone.github.io/blog/2013/05/21/install-theme/';
+        var disqus_identifier = 'http://lijunjieone.github.io/blog/2013/05/26/octopress-learn-plugin/';
+        var disqus_url = 'http://lijunjieone.github.io/blog/2013/05/26/octopress-learn-plugin/';
         var disqus_script = 'embed.js';
       
     (function () {

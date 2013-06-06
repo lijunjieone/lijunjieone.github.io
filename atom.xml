@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Record Life]]></title>
   <link href="http://lijunjieone.github.io/atom.xml" rel="self"/>
   <link href="http://lijunjieone.github.io/"/>
-  <updated>2013-05-22T13:57:45+08:00</updated>
+  <updated>2013-06-06T09:51:48+08:00</updated>
   <id>http://lijunjieone.github.io/</id>
   <author>
     <name><![CDATA[Lijunjie]]></name>
@@ -12,6 +12,289 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[nexue 4上安装sqlite3数据库查看工具]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/06/03/nexus-install-sqlite3/"/>
+    <updated>2013-06-03T10:02:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/06/03/nexus-install-sqlite3</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[东吴相对论之房子的分化]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/06/03/house-feature/"/>
+    <updated>2013-06-03T09:17:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/06/03/house-feature</id>
+    <content type="html"><![CDATA[<h1>两种经济学家</h1>
+
+<p>做预测的经济学家分为两种
+&ndash; 不会预测的经济学家
+&ndash; 知道自己不会预测的经济学家</p>
+
+<h1>平均数的误区</h1>
+
+<p>一个不会游泳经济学家想过一条河,河上没有桥，不过不深，然后找到这个河的深度数据的平均数是1.5米，他的身高是1.8米，然后他觉得自己可以过去，那么过河的时候就淹死了。
+平均数据是1.5，深的时候也可能是2.0米。所以很多时候我们被平均数误导</p>
+
+<h1>长尾理论</h1>
+
+<p>长尾效应，头和尾是两个统计学名词，正太曲线凸起的部分叫做头，两边比较平缓的部分叫做尾，大部分的需求集中在头，我们称之为流行，而个性化的零散的需求在尾，这个长长的尾，我们称之为长尾效应。
+长尾效应主要集中在他的数量上，将所有非流行的数据都加起来就会比流行的市场还要大。</p>
+
+<h1>马太效应</h1>
+
+<p>凡有的，还要加给他叫他多余，没有的，连他所有的也要夺过来。
+天之道，损有余而补不足，人之道则不然，损不足以奉有余。&mdash;道德经*七十七章</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[octopress 插件学习]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/05/26/octopress-learn-plugin/"/>
+    <updated>2013-05-26T23:05:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/05/26/octopress-learn-plugin</id>
+    <content type="html"><![CDATA[<p>前面都是摘要</p>
+
+<!--more-->
+
+
+<h1>摘要</h1>
+
+<p>写一段摘要文字，现在是在博客的列表上，然后以</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!--more--&gt;</span></code></pre></td></tr></table></div></figure>
+
+
+<p>分割，那么以前的文字会作为摘要。</p>
+
+<h1>图片插件</h1>
+
+<h2>语法</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'><img class="[class names]" src="http://lijunjieone.github.io/path/to/image" title="[width] [height] [title text [alt text]]" ></span></code></pre></td></tr></table></div></figure>
+
+
+<h2>使用</h2>
+
+<p><img src="http://placekitten.com/890/280">
+这段文字是为了显示图片的展现位置</p>
+
+<p><img class="left" src="http://placekitten.com/320/250" title="Place Kitten #2" >
+这段文字是为了显示图片的左边</p>
+
+<p><img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #3" >
+这段文字是为了显示图片的右边</p>
+
+<p><img class="right" src="http://placekitten.com/300/500" width="150" height="250" title="Place Kitten #4" alt="An image of a very cute kitten">
+这段文字是为了显示图片的展现位置</p>
+
+<h1>引用</h1>
+
+<h2>语法</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'><blockquote><p></span><span class='line'>Quote string<br/></span><span class='line'></p><footer><strong>[author[</strong> <cite>Source]] [Link] [Source_link_title]</cite></footer></blockquote></span></code></pre></td></tr></table></div></figure>
+
+
+<h2>例子</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'><blockquote><p></span><span class='line'>Last night I lay in bed looking up at the stars in the sky and I thought to myself, where the heck is the ceiling.<br/></span><span class='line'></p></blockquote></span></code></pre></td></tr></table></div></figure>
+
+
+<blockquote><p>Last night I lay in bed looking up at the stars in the sky and I thought to myself, where the heck is the ceiling.</p></blockquote>
+
+
+
+
+<blockquote><p>Flying is learning how to throw yourself at the ground and miss.</p><footer><strong>Douglas Adams</strong> <cite>The Hichhikers Guide to the Galaxy</cite></footer></blockquote>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[octopress分享代码笔记]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/05/26/octopress-share-code/"/>
+    <updated>2013-05-26T14:21:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/05/26/octopress-share-code</id>
+    <content type="html"><![CDATA[<h1>重音符显示不进行处理的内容</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def printpy:
+</span><span class='line'>    print "test"
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Fixnum</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">prime?</span>
+</span><span class='line'>      <span class="p">(</span><span class="s1">&#39;1&#39;</span> <span class="o">*</span> <span class="nb">self</span><span class="p">)</span> <span class="o">!~</span> <span class="sr">/^1?$|^(11+?)\1+$/</span>
+</span><span class='line'>        <span class="k">end</span>
+</span><span class='line'>        <span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>在博客中使用gist</h1>
+
+<p>gist是一个分享代码片段的好方法，写好的一个gist会放在githup的仓库中，有一个id，在octopress可以很方便的使用</p>
+
+<div><script src='https://gist.github.com/996818.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<h1>嵌入其他文件代码</h1>
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="n">include_code</span> <span class="o">[</span><span class="n">title</span><span class="o">]</span> <span class="o">[</span><span class="ss">lang</span><span class="p">:</span><span class="n">language</span><span class="o">]</span> <span class="n">path</span><span class="o">/</span><span class="n">file</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>代码放在source/downloads/code/下</p>
+
+<figure class='code'><figcaption><span>Discover if a number is prime</span><a href='http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/'>Source Article</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">{</span><span class="o">%</span> <span class="n">include_code</span> <span class="nb">test</span><span class="o">.</span><span class="n">js</span> <span class="o">%</span><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<figure class='code'><figcaption><span> (test.js)</span> <a href='http://lijunjieone.github.io/downloads/code/test.js'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm">sample javascript from xui</span>
+</span><span class='line'><span class="cm">*/</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="kc">undefined</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">xui</span><span class="p">,</span>
+</span><span class='line'>    <span class="nb">window</span>     <span class="o">=</span> <span class="k">this</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">string</span>     <span class="o">=</span> <span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">),</span>
+</span><span class='line'>    <span class="nb">document</span>   <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nb">document</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">simpleExpr</span> <span class="o">=</span> <span class="sr">/^#?([\w-]+)$/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">idExpr</span>     <span class="o">=</span> <span class="sr">/^#/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">tagExpr</span>    <span class="o">=</span> <span class="sr">/&lt;([\w:]+)/</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">slice</span>      <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="p">[].</span><span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span> <span class="p">};</span>
+</span><span class='line'>    <span class="k">try</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">documentElement</span><span class="p">.</span><span class="nx">childNodes</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">nodeType</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'>    <span class="k">catch</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span> <span class="nx">slice</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span> <span class="kd">var</span> <span class="nx">ret</span><span class="o">=</span><span class="p">[];</span> <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">];</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+</span><span class='line'>        <span class="nx">ret</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">e</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span> <span class="k">return</span> <span class="nx">ret</span><span class="p">;</span> <span class="p">};</span> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nb">window</span><span class="p">.</span><span class="nx">x$</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">xui</span> <span class="o">=</span> <span class="nx">xui</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">new</span> <span class="nx">xui</span><span class="p">.</span><span class="nx">fn</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="nx">q</span><span class="p">,</span> <span class="nx">context</span><span class="p">);</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>强制语法高亮</h2>
+
+<figure class='code'><figcaption><span> (test.coffee)</span> <a href='http://lijunjieone.github.io/downloads/code/test.coffee'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='coffeescript'><span class='line'><span class="nv">fibonacci = </span><span class="nf">(n) -&gt;</span>
+</span><span class='line'>  <span class="k">if</span> <span class="nx">n</span> <span class="o">&lt;=</span> <span class="mi">2</span>
+</span><span class='line'>    <span class="nx">n</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="nx">arguments</span><span class="p">.</span><span class="nx">callee</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="nx">arguments</span><span class="p">.</span><span class="nx">callee</span><span class="p">(</span><span class="nx">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">for</span> <span class="nx">x</span> <span class="k">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">..</span><span class="mi">10</span><span class="p">]</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span> <span class="s">&quot;</span><span class="si">#{</span><span class="nx">x</span><span class="si">}</span><span class="s"> : </span><span class="si">#{</span><span class="nx">fibonacci</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span><span class="si">}</span><span class="s">&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>直接嵌入代码</h1>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def test:
+</span><span class='line'>    print "test"</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[在儿童医院看外科急诊]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/05/26/children-hospoty/"/>
+    <updated>2013-05-26T13:28:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/05/26/children-hospoty</id>
+    <content type="html"><![CDATA[<h1>儿童医院外科急诊指南</h1>
+
+<h2>孩子受伤首次挂急诊</h2>
+
+<ul>
+<li>急诊挂号</li>
+<li>在外科门诊排队</li>
+<li>大夫会按照次序叫好，开好单子。</li>
+<li>去缴费，拿药。一般都要打破伤风</li>
+<li>去注射室排队打针</li>
+<li>打完针，去手术室排队</li>
+<li>伤口不大一般不会全身麻醉，会局部麻醉。</li>
+<li>那么需要两个人来辅助缝合伤口，一个要抓住孩子身子，另外一个要抓住孩子的头部。</li>
+<li>完成后，等3天后来换药
+
+<h2>换药</h2></li>
+<li>早上早点挂号，大概上午和下午各有100个号。</li>
+<li>挂号完毕在儿童医院4楼，一般挂号单上会有写。</li>
+<li>上楼后，:</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[android_pid_vid]]></title>
+    <link href="http://lijunjieone.github.io/blog/2013/05/24/android-pid-vid/"/>
+    <updated>2013-05-24T12:18:00+08:00</updated>
+    <id>http://lijunjieone.github.io/blog/2013/05/24/android-pid-vid</id>
+    <content type="html"><![CDATA[<p>pid=Product Id,是一个设备的产品id,同一个制造商的同一款产品有相同的product_id,相同的制造商的不同产品是由不同的product_ID
+vid=Verdor Id，是一个设备在系统中的设备制造商的id。每个制造商的产品都有相同的vid</p>
+
+<p>在linux中可以使用
+lsusb
+在mac中可以使用
+system_profiler SPUSBDataType
+来查看当前usb的设备列表</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[完善博客写作]]></title>
@@ -65,6 +348,10 @@
 
 
 <h1>安装评论</h1>
+
+<p>octopress本身支持disqus
+&ndash; 首先注册一个账户在disqus上，然后拿到他的shortname
+&ndash; 在_config.xml文件中找到disqus选项，开启支持，然后填入你的shortname就可以了</p>
 ]]></content>
   </entry>
   

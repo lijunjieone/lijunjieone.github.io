@@ -5,13 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>octopress博客系统使用 - Record Life</title>
+  <title>android_pid_vid - Record Life</title>
   <meta name="author" content="Lijunjie">
 
   
-  <meta name="description" content="修复github上显示不正常的问题 问题 使用octopress可以很简单的把他推送到github上，只需要安装好octopress
-使用octopress new_post[&lsquo;test&rsquo;]建立一个最简单的文章
-使用rake &hellip;">
+  <meta name="description" content="pid=Product Id,是一个设备的产品id,同一个制造商的同一款产品有相同的product_id,相同的制造商的不同产品是由不同的product_ID
+vid=Verdor Id，是一个设备在系统中的设备制造商的id。每个制造商的产品都有相同的vid 在linux中可以使用
+lsusb &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lijunjieone.github.io/blog/2013/05/21/install-theme/">
+  <link rel="canonical" href="http://lijunjieone.github.io/blog/2013/05/24/android-pid-vid/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">Octopress博客系统使用</h1>
+      <h1 class="entry-title">Android_pid_vid</h1>
     
     
       <p class="meta">
@@ -85,7 +85,7 @@
   
 
 
-<time datetime="2013-05-21T22:41:00+08:00" pubdate data-updated="true">May 21<span>st</span>, 2013</time>
+<time datetime="2013-05-24T12:18:00+08:00" pubdate data-updated="true">May 24<span>th</span>, 2013</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -94,48 +94,14 @@
   </header>
 
 
-<div class="entry-content"><h1>修复github上显示不正常的问题</h1>
+<div class="entry-content"><p>pid=Product Id,是一个设备的产品id,同一个制造商的同一款产品有相同的product_id,相同的制造商的不同产品是由不同的product_ID
+vid=Verdor Id，是一个设备在系统中的设备制造商的id。每个制造商的产品都有相同的vid</p>
 
-<ul>
-<li>问题
-
-<ul>
-<li>使用octopress可以很简单的把他推送到github上，只需要安装好octopress</li>
-<li>使用octopress new_post[&lsquo;test&rsquo;]建立一个最简单的文章</li>
-<li>使用rake setup_github_pages来设置你的github地址
-
-<ul>
-<li>设置的这个地址很有学问，这儿地方很容易出错</li>
-<li>github中的pages有两种，如果使用的工程的地址，那么可能出现页面展示很难看的问题
-
-<ul>
-<li>github的pages第一种是相对于这个用户的，只能建立一个这样的仓库，仓库名称应该是yourname.github.io这个名字，建立一个，你推送上去的文件，访问yourname.github.io将会展现出来。octopress部署到这个地址上，那么显示正常</li>
-<li>github的pages的另外一种类型是针对每个仓库都有一个pd-pages分支，你推送的这个分支上的内容，他可以使用yourname.github.io/yourrepo来访问，如果octopress推送到这个地址，那么就显示不正常</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-
-<h1>安装新的octopress博客主题</h1>
-
-<ul>
-<li>从google上搜索octopress主题，可以找到很多</li>
-<li>进入.themes目录下</li>
-<li>使用git clone GIT_URL cyan到本地</li>
-<li>退出到octopress根目录下，使用rake install[&lsquo;cyan&rsquo;]来安装新主题</li>
-<li>rake preview 查看是否主题生效</li>
-</ul>
-
-
-<h1>安装评论</h1>
-
-<p>octopress本身支持disqus
-&ndash; 首先注册一个账户在disqus上，然后拿到他的shortname
-&ndash; 在_config.xml文件中找到disqus选项，开启支持，然后填入你的shortname就可以了</p>
+<p>在linux中可以使用
+lsusb
+在mac中可以使用
+system_profiler SPUSBDataType
+来查看当前usb的设备列表</p>
 </div>
 
 
@@ -158,7 +124,7 @@
   
 
 
-<time datetime="2013-05-21T22:41:00+08:00" pubdate data-updated="true">May 21<span>st</span>, 2013</time>
+<time datetime="2013-05-24T12:18:00+08:00" pubdate data-updated="true">May 24<span>th</span>, 2013</time>
       
 
 
@@ -166,7 +132,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lijunjieone.github.io/blog/2013/05/21/install-theme/" data-via="" data-counturl="http://lijunjieone.github.io/blog/2013/05/21/install-theme/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://lijunjieone.github.io/blog/2013/05/24/android-pid-vid/" data-via="" data-counturl="http://lijunjieone.github.io/blog/2013/05/24/android-pid-vid/" >Tweet</a>
   
   
   
@@ -175,10 +141,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/05/21/first-blog/" title="Previous Post: first_blog">&laquo; first_blog</a>
+        <a class="basic-alignment left" href="/blog/2013/05/22/octopress-install/" title="Previous Post: 完善博客写作">&laquo; 完善博客写作</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/05/22/octopress-install/" title="Next Post: 完善博客写作">完善博客写作 &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2013/05/26/children-hospoty/" title="Next Post: 在儿童医院看外科急诊">在儿童医院看外科急诊 &raquo;</a>
       
     </p>
   </footer>
@@ -244,8 +210,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://lijunjieone.github.io/blog/2013/05/21/install-theme/';
-        var disqus_url = 'http://lijunjieone.github.io/blog/2013/05/21/install-theme/';
+        var disqus_identifier = 'http://lijunjieone.github.io/blog/2013/05/24/android-pid-vid/';
+        var disqus_url = 'http://lijunjieone.github.io/blog/2013/05/24/android-pid-vid/';
         var disqus_script = 'embed.js';
       
     (function () {
